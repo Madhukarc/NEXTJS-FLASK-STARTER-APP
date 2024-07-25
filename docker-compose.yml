@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./python-flask-app
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/user_management
+    depends_on:
+      - mongo
+
+  frontend:
+    build: ./nextjs-starter-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://api:5000
+    depends_on:
+      - api
+
+  mongo:
+    image: mongo:4.4
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
