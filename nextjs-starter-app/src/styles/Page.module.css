@@ -1,0 +1,15 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .container p {
+    color: #666;
+    line-height: 1.6;
+  }

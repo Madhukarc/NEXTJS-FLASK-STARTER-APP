@@ -1,0 +1,44 @@
+.formContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input, .form select {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.form button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #3a7bc8;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.selectContainer label {
+  margin-bottom: 0.5rem;
+}

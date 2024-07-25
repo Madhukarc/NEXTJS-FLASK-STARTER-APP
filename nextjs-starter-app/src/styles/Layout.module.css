@@ -1,0 +1,136 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.profileContainer {
+  position: relative;
+}
+
+.profileButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.profileDropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.profileDropdown a,
+.profileDropdown button {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.profileDropdown a:hover,
+.profileDropdown button:hover {
+  background-color: #f0f0f0;
+}
+
+.authButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.loginButton, .signupButton {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  width: 200px;
+  transition: all 0.3s ease;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+
+.sidebar a svg {
+  min-width: 1.2em;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.sidebar.collapsed .linkText {
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+}

@@ -1,0 +1,35 @@
+.sidebar {
+    background-color: #f0f0f0;
+    width: 200px;
+    transition: width 0.3s;
+    padding: 20px;
+  }
+  
+  .sidebar.collapsed {
+    width: 60px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .sidebar a svg {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  .sidebar.collapsed a span {
+    display: none;
+  }
