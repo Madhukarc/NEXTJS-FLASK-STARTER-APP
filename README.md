@@ -35,7 +35,7 @@ This is a full-stack User Management Application built with Next.js for the fron
 
 1. Clone the repository:
 
-        git clone https://github.com/your-username/user-management-app.git
+        git clone https://github.com//Madhukarc/user-management-app.git
         cd user-management-app
 
 2.  Set up the backend:
